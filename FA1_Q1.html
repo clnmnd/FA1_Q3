@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h2>Welcome to my simple calculator page!</h2>
+<p id="numbers"></p>
+<p id="result"></p>
+<p id="numbers2"></p>
+<p id="result2"></p>
+
+
+<script>
+
+// Step 1: Get two numbers using prompt
+let num1 = Number(prompt("Enter the first number:"));
+let num2 = Number(prompt("Enter the second number:"));
+let num3 = Number(prompt("Enter the third number:"));
+let num4 = Number(prompt("Enter the fourth number:"));
+// Step 2: Perform operations
+let sum = num1 + num2;
+let difference = num1 - num2;
+let product = num1 * num2;
+//for innerhtml
+let sum2 = num3 + num4;
+let difference2 = num3 - num4;
+let product2 = num3 * num4;
+
+// Step 3: Display numbers and results using document.write()
+// Display the numbers
+document.write("Numbers: " +  num1 + " and " + num2);
+document.write("<br>");
+
+// Display the sum
+document.write("Sum: " + sum);
+document.write("<br>");
+
+// Display the difference
+document.write("Difference: " + difference);
+document.write("<br>");
+
+// Display the product
+document.write("Product: " + product);
+document.write("<br>");
+
+
+// Step 4: Display results using innerHTML
+// Display the numbers
+document.getElementById("numbers2").innerHTML = "Numbers: " + num3 + " and " + num4;
+
+// Display all results together in one assignment
+document.getElementById("result2").innerHTML =
+  "Sum: " + sum2 + "<br>" +
+  "Difference: " + difference2 + "<br>" +
+  "Product: " + product2 + "<br>";
+</script>
+</body>
+</html>
